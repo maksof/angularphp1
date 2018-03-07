@@ -1,0 +1,8 @@
+<form ui-keypress="{13:'register()'}">
+	<input type="text" placeholder="Email" ng-model="signupform.email" >
+	<input type="text" placeholder="UserName" ng-model="signupform.username" alpha-numeric>
+	<input type="password" placeholder="Password" ng-model="signupform.pass">
+	<input type="password" placeholder="Confirm Password" ng-model="signupform.con_pass">
+	<div vc-recaptcha key="'6LfhNUIUAAAAAA8D0T6W2rywrpm-3FAJxyo4zRyZ'" on-success="setResponse(response)"></div>
+	<input type="submit" value="CONTINUE" ng-click="register()">
+</form>
